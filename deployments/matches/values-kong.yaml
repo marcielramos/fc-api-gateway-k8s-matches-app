@@ -55,6 +55,7 @@ ingress:
   hosts:
     - paths:
         - path: /api/matches
+          pathType: Prefix
           backend:
             serviceName: matches
             servicePort: 9999
